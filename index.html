@@ -1,55 +1,148 @@
 <!DOCTYPE html>
 <html lang="hu">
 <head>
-  <meta charset="UTF-8">
-  <title>Linkek</title>
-  <style>
-    body {
-      font-size: 35px;
-      background-color: #d3d3d3;
-      text-align: center;
-      margin: 0;
-      padding: 0;
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Rádió & Link Board</title>
+
+<style>
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    padding:20px;
+    font-family:Arial, sans-serif;
+    background:#111827;
+    color:white;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:25px;
+    font-size:32px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+    gap:15px;
+    max-width:900px;
+    margin:auto;
+}
+
+.btn{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+
+    min-height:90px;
+    padding:15px;
+
+    border-radius:18px;
+
+    background:linear-gradient(145deg,#1f2937,#374151);
+
+    color:white;
+    text-decoration:none;
+
+    font-size:20px;
+    font-weight:bold;
+
+    box-shadow:
+        0 4px 10px rgba(0,0,0,0.4),
+        inset 0 1px 1px rgba(255,255,255,0.1);
+
+    transition:0.15s;
+}
+
+.btn:active{
+    transform:scale(0.96);
+}
+
+.btn:hover{
+    background:linear-gradient(145deg,#374151,#4b5563);
+}
+
+@media (max-width:600px){
+    .btn{
+        min-height:80px;
+        font-size:18px;
     }
-    h1 {
-      font-size: 60px;
-      margin-top: 30px;
-      margin-bottom: 40px;
-    }
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-    li {
-      margin: 10px 0;
-    }
-    a {
-      text-decoration: none;
-      color: blue;
-    }
-  </style>
+}
+</style>
 </head>
+
 <body>
 
-<!-- <h1>Szia Bébbbóóóóó</h1> -->
+<h1>🎵 Link Board</h1>
 
-  <ul>
-    <li><a href="https://stream.tilos.hu/" target="_blank">Tilos Rádió Stream</a></li>
-    <li><a href="https://coolfm.hu/radio/" target="_blank">Cool FM</a></li>
-    <li><a href="https://stream.tilos.hu/djpalotai" target="_blank">Palotai</a></li>
-    <li><a href="https://karolyimusic.com/" target="_blank">Károlyi Music</a></li>
-    <li><a href="https://rockradio.hu/" target="_blank">Rock Rádió</a></li>
-    <li><a href="https://tilos.hu/extra/show" target="_blank">Tilos Extra Show</a></li>
-    <li><a href="https://www.youtube.com/" target="_blank">YouTube</a></li>
-    <li><a href="https://myonlineradio.hu/" target="_blank">Online Rádiók</a></li>
-    <li><a href="https://radiocomedy.net/" target="_blank">Rádió Comedy</a></li>
-    <li><a href="https://bdpstrock.hu/" target="_blank">Budapest Rock</a></li>
-    <li><a href="https://deejayradio.hu/" target="_blank">DeeJay Radio</a></li>
-    <li><a href="https://onlinestream.live/" target="_blank">Online Stream</a></li>
-    <li><a href="https://www.balatonica.hu/" target="_blank">Balatonica</a></li>
-    <li><a href="https://sweet.tv/hu/tv" target="_blank">Sweet TV</a></li>
-    <li><a href="https://mercyradio.eu/mercy-radio/kabare-magyar-radio/" target="_blank">Mercy Rádió Kabaré</a></li>
-  </ul>
+<div class="grid">
+
+<a class="btn" href="https://stream.tilos.hu/" target="_blank">
+Tilos Stream
+</a>
+
+<a class="btn" href="https://coolfm.hu/radio/" target="_blank">
+Cool FM
+</a>
+
+<a class="btn" href="https://stream.tilos.hu/djpalotai" target="_blank">
+Palotai
+</a>
+
+<a class="btn" href="https://karolyimusic.com/" target="_blank">
+Károlyi Music
+</a>
+
+<a class="btn" href="https://rockradio.hu/" target="_blank">
+Rock Rádió
+</a>
+
+<a class="btn" href="https://tilos.hu/extra/show" target="_blank">
+Tilos Extra
+</a>
+
+<a class="btn" href="https://www.youtube.com/" target="_blank">
+YouTube
+</a>
+
+<a class="btn" href="https://myonlineradio.hu/" target="_blank">
+Online Rádiók
+</a>
+
+<a class="btn" href="https://radiocomedy.net/" target="_blank">
+Rádió Comedy
+</a>
+
+<a class="btn" href="https://bdpstrock.hu/" target="_blank">
+Budapest Rock
+</a>
+
+<a class="btn" href="https://deejayradio.hu/" target="_blank">
+DeeJay Radio
+</a>
+
+<a class="btn" href="https://onlinestream.live/" target="_blank">
+Online Stream
+</a>
+
+<a class="btn" href="https://www.balatonica.hu/" target="_blank">
+Balatonica
+</a>
+
+<a class="btn" href="https://sweet.tv/hu/tv" target="_blank">
+Sweet TV
+</a>
+
+<a class="btn" href="https://mercyradio.eu/mercy-radio/kabare-magyar-radio/" target="_blank">
+Mercy Kabaré
+</a>
+
+</div>
 
 </body>
 </html>
